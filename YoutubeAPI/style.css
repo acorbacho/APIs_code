@@ -1,0 +1,54 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  background-color: #FFFFFF;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23eecccc' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23dd9999' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23cc6666' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23bb3333' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.search__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+img.banner {
+  width: 230px;
+  height: 100px;
+}
+
+div.login__container>button {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  color: #ffffff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: rgba(65, 141, 255, 0.836);
+  border-color: #3c68f8;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+div.login__container>button:hover {
+  background-color: rgba(65, 141, 255, 0.95);
+}
+
+.input {
+  width: 300px;
+  margin-left: 10px;
+}
+
+div.search__container__2 {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+div.search__container__2>button {
+  margin-left: 1%;
+  cursor: pointer;
+}

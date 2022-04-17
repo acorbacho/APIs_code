@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='UTF-8' />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <img class="title" src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png"></img>
+  <div id="pokemon_stats">
+    <div class="name">
+      <p>Nombre:</p>
+      <input type="text" id="name" placeholder="Nombre" value="Pikachu">
+    </div>
+    <div class="id">
+      <p>Número:</p>
+      <input type="text" id="id" placeholder="Número" value="25">
+    </div>
+    <div class="base_experience">
+      <p>Exp. base:</p>
+      <p id="base_experience">0</p>
+    </div>
+    <div class="height">
+      <p>Altura:</p>
+      <p id="height">0</p>
+    </div>
+    <div class="weight">
+      <p>Peso:</p>
+      <p id="weight">0</p>
+    </div>
+    <div class="sprite">
+      <img id="sprite"></img>
+    </div>
+  </div>
+  <script src='main.js'></script>
+</body>
+
+</html>
