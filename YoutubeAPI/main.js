@@ -7,7 +7,10 @@ let video = document.getElementsByTagName('iframe')
 // Variable que recoge la consulta del usuario.
 var q = ''
 
-// Se carga la Google API Client Library for JavaScript desde la API de Google, para poder realizar una autenticación OAuth 2.0.
+/**
+ * Se carga la Google API Client Library for JavaScript desde la API de Google,
+ * para poder realizar una autenticación OAuth 2.0.
+ */
 gapi.load('client:auth2', function () {
   // Se inicializa un objeto GoogleAuth con la client ID del desarrollador.
   gapi.auth2.init({ client_id: client_id })
@@ -69,7 +72,10 @@ function execute() {
     'type': 'video',
     'maxResults': 1
   })
-    // Manejo de respuesta y errores. Se muestran los resultados en la interfaz web, en caso de error, se muestra dicho error por consola.
+    /**
+     * Manejo de respuesta y errores. Se muestran los resultados en la interfaz web,
+     * en caso de error, se muestra dicho error por consola.
+     */
     .then(function (response) {
       video[0].src = 'https://www.youtube.com/embed/' + response.result.items[0].id.videoId
       video[0].hidden = false

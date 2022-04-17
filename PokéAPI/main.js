@@ -1,5 +1,8 @@
 function main() {
-  // Se establece un valor por defecto y se recoge el nombre que introduce el usuario al pulsar enter.
+  /**
+   * Se establece un valor por defecto, y se recoge el nombre que introduce el usuario,
+   * al pulsar enter.
+   */
   var pokemon_name_id = 25
   var element_name = document.getElementById('name')
   var element_id = document.querySelector('#id')
@@ -32,7 +35,10 @@ function main() {
       'type': 'GET',
       'url': 'https://pokeapi.co/api/v2/pokemon/' + pokemon_name_id,
     }
-    // Se utiliza AJAX para que cuando realice la llamada invoque a una funcion con la respuesta, que manejeremos con DOM para mostrar resultados.
+    /**
+     * Se utiliza AJAX para que cuando realice la llamada invoque a una funcion con la respuesta,
+     * que manejeremos con DOM para mostrar resultados.
+     */
     $.ajax(settings).done(function (response) {
       console.log(response)
       document.getElementById('name').value = response.name.charAt(0).toUpperCase() + response.name.slice(1)
