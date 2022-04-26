@@ -31,12 +31,12 @@ function main() {
   request('GET', 'https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest?CMC_PRO_API_KEY=' + apikey.key)
     /**
       * Manejamos el resolve de la Promise con .then y en su interior invocamos una función anónima,
-      * en la que estará recogida el evento proveniente del xhr.onload,
+      * en la que estará recogida la respuesta proveniente del xhr.onload,
       * y luego imprimimos los datos que deseamos, en este caso,
       * la capitalización de mercado total en USD.
       */
     .then((r1) => {
-      // Recogemos la respuesta JSON del evento xhr y la convertimos a string.
+      // Recogemos la respuesta en formato texto y la parseamos a JSON.
       var x1 = JSON.parse(r1.target.responseText)
       // Imprimimos por consola la información deseada.
       console.log(x1.data.quote.USD.total_market_cap)
